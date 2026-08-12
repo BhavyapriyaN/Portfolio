@@ -149,8 +149,7 @@ export const certifications = [
     org: 'Amazon Web Services',
     name: 'AWS Certified Solutions Architect – Associate (SAA-C03)',
     date: 'Feb 2024 – Feb 2027',
-    // TODO: paste your Credly badge URL here to make this card clickable.
-    url: '',
+    url: 'https://www.credly.com/badges/b7e0d5eb-4d44-42b6-81d1-2cf901ed9932',
   },
   {
     org: 'Microsoft',
