@@ -13,7 +13,7 @@ export const personal = {
   linkedin: 'https://www.linkedin.com/in/bhavyapriya/',
   github: 'https://github.com/BhavyapriyaN',
   // Place your resume file in /public and update the filename below if it changes.
-  resumeUrl: '/Bhavyapriya_N_Resume.pdf',
+  resumeUrl: 'Bhavyapriya_N_Resume.pdf',
   location: 'Bangalore, India',
 }
 
