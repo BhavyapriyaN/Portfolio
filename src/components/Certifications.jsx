@@ -25,17 +25,19 @@ export default function Certifications() {
           <div className="font-mono text-xs uppercase tracking-wide text-ink-soft mb-3">Awards</div>
           <div className="flex flex-col gap-3">
             {awards.map((award) => (
-              <div
-                key={award.name}
-                className="border border-line rounded-xl p-4.5 bg-white flex justify-between items-center flex-wrap gap-2"
-              >
+            <div
+              key={award.name}
+              className="border border-line rounded-xl p-5 bg-white flex justify-between items-start flex-wrap gap-3"
+            >
+              <div>
                 <div>
                   <span className="font-semibold">{award.name}</span>
                   <span className="text-ink-soft text-sm"> — {award.org}</span>
-                  {award.detail && <div className="text-[13px] text-ink-soft mt-0.5">{award.detail}</div>}
                 </div>
-                <span className="font-mono text-xs text-accent-deep whitespace-nowrap">{award.date}</span>
+                {award.detail && <div className="text-[13px] text-ink-soft mt-1">{award.detail}</div>}
               </div>
+              <span className="font-mono text-xs text-accent-deep whitespace-nowrap pt-0.5">{award.date}</span>
+            </div>
             ))}
           </div>
         </div>
