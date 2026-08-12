@@ -35,7 +35,7 @@ export default function Hero() {
               View My Work
             </a>
             <a
-              href={personal.resumeUrl}
+              href={`${import.meta.env.BASE_URL}${personal.resumeUrl}`}
               download
               className="inline-flex items-center gap-2 text-[14.5px] font-semibold px-5 py-3 rounded-lg border border-line text-ink hover:border-accent hover:text-accent-deep transition-colors"
             >
