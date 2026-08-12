@@ -26,9 +26,8 @@ export const heroStats = [
 
 export const about = {
   paragraphs: [
-    "I'm a Data Engineer at Datagrokr Analytics with nearly three years of experience building cloud data infrastructure, primarily on AWS. My work centers on FinOps — designing ETL pipelines with Redshift, Glue, and Lambda, and turning cloud usage data into cost-optimization tooling and executive-ready Power BI dashboards.",
-    "Beyond pipeline engineering, I've worked on cost anomaly detection frameworks, cross-account data governance with AWS Lake Formation, and disaster recovery architecture for Redshift. I'm also exploring how AI agents and MCP servers can extend cloud cost automation.",
-    "I hold the AWS Solutions Architect Associate and Microsoft Fabric Data Engineer certifications, and I'm looking to bring that same rigor to data platform teams at product-based technology companies.",
+    "I'm a Data Engineer at Datagrokr Analytics with nearly three years of experience building cloud data infrastructure on AWS. My work centers on FinOps — ETL pipelines with Redshift, Glue, and Lambda, and cost-optimization tooling backed by Power BI dashboards.",
+    "I hold AWS and Microsoft certifications in data engineering, and I'm looking to bring that same rigor to data platform teams.",
   ],
   facts: [
     { label: 'Role', value: 'Data Engineer' },
@@ -46,16 +45,12 @@ export const experience = [
     location: 'Bangalore, India',
     dates: 'Oct 2023 — Present',
     bullets: [
-      'Designed and optimized scalable ETL pipelines using AWS Redshift, Glue, Athena, S3, Lambda, Step Functions, Batch, and DynamoDB.',
+      'Designed and optimized scalable ETL pipelines on AWS Redshift, Glue, Athena, S3, Lambda, Step Functions, and DynamoDB.',
       'Reduced ELB processing time by over 70% (6–7 hours to under 2 hours) and cut EC2 processing to 10–15 minutes.',
-      'Led migration of the Chargeback reporting system from CUR 1.0 to CUR 2.0, redesigning stored procedures and validating financial data.',
-      'Built and deployed 8+ production-grade Power BI dashboards for FinOps reporting using dynamic DAX, incremental refresh, drill-through, and bookmarks.',
-      'Designed a Cost Anomaly Detection framework, evaluating Median + MAD, IQR, Percentile, and AWS-native approaches before production deployment.',
-      'Developed configurable budget alert automation using AWS Lambda, DynamoDB, and Athena, eliminating manual budget monitoring.',
-      'Built an automated OCI Cost & Usage integration pipeline with 6-hour scheduled refreshes and ETL into Amazon Redshift.',
-      'Developed AI-powered MCP Server solutions integrated with Amazon Bedrock AgentCore Gateway and AWS Lambda for AI-assisted cost optimization.',
-      'Implemented AWS Lake Formation-based cross-account data sharing and governance using IAM, S3, and YAML-driven automation.',
-      'Designed cross-region disaster recovery using Amazon Redshift DR and automated S3 Batch Replication.',
+      'Led the Chargeback reporting migration from CUR 1.0 to CUR 2.0, redesigning stored procedures and validating financial data.',
+      'Built and deployed 8+ production Power BI dashboards for FinOps reporting using dynamic DAX and incremental refresh.',
+      'Designed a Cost Anomaly Detection framework and configurable budget alert automation on Lambda, DynamoDB, and Athena.',
+      'Developed AI-powered MCP Server solutions on Amazon Bedrock AgentCore Gateway for AI-assisted cost optimization.',
     ],
     tech: ['AWS', 'Redshift', 'Glue', 'Lambda', 'Power BI', 'DynamoDB'],
   },
@@ -147,21 +142,27 @@ export const projects = [
   },
 ]
 
+// `url` links the card to the public credential. Leave it out (or empty)
+// and the card renders as plain text instead of a link.
 export const certifications = [
   {
     org: 'Amazon Web Services',
     name: 'AWS Certified Solutions Architect – Associate (SAA-C03)',
     date: 'Feb 2024 – Feb 2027',
+    // TODO: paste your Credly badge URL here to make this card clickable.
+    url: '',
   },
   {
     org: 'Microsoft',
     name: 'Fabric Data Engineer Associate (DP-700)',
     date: 'Jun 2025 – Jun 2026',
+    url: 'https://learn.microsoft.com/en-us/users/bhavyapriyan-0550/credentials/cddb8f865c1d3668',
   },
   {
     org: 'Microsoft',
     name: 'Power BI Data Analyst Associate (PL-300)',
     date: 'Dec 2024 – Dec 2026',
+    url: 'https://learn.microsoft.com/en-us/users/bhavyapriyan-0550/credentials/dd99b8a5bc112925',
   },
 ]
 

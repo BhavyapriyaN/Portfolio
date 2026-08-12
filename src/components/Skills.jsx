@@ -19,7 +19,7 @@ function SkillGroup({ group }) {
 
 export default function Skills() {
   return (
-    <Section id="skills" eyebrow="Skills" title="Tech I work with">
+    <Section id="skills" eyebrow="Capabilities" title="Skills">
       <div className="grid sm:grid-cols-2 gap-6">
         {skillGroups.map((group) => (
           <SkillGroup key={group.title} group={group} />

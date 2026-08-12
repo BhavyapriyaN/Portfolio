@@ -3,7 +3,7 @@ import { education } from '../data/portfolio.js'
 
 export default function Education() {
   return (
-    <Section id="education" eyebrow="Education" title="Academic background" maxWidth="max-w-[760px]">
+    <Section id="education" eyebrow="Background" title="Education" maxWidth="max-w-[760px]">
       {education.map((edu, i) => (
         <div
           key={edu.degree}

@@ -9,7 +9,7 @@ export default function Contact() {
           <span className="w-3.5 h-px bg-accent" />
           Contact
         </div>
-        <h2 className="text-[28px] md:text-[32px] font-extrabold mb-3.5">Let's build something useful with data.</h2>
+        <h2 className="text-[28px] md:text-[32px] font-extrabold mb-3.5">Turning complex data into systems that scale.</h2>
         <p className="text-ink-soft text-[15.5px] mb-7">
           Open to Data Engineering, BI, and Analytics roles.
         </p>

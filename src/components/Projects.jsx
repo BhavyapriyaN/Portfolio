@@ -8,7 +8,7 @@ export default function Projects() {
       id="projects"
       eyebrow="Featured Work"
       title="Selected engineering work"
-      subtitle="Pulled directly from production work at Datagrokr Analytics."
+      subtitle="Production work at Datagrokr Analytics."
     >
       <div className="grid sm:grid-cols-2 gap-5.5">
         {projects.map((project) => (

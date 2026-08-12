@@ -6,17 +6,28 @@ export default function Navbar() {
   const [active, setActive] = useState('')
 
   useEffect(() => {
-    const sections = nav.map((n) => document.querySelector(n.href)).filter(Boolean)
+    // Sorted by document position so "topmost visible" stays correct even if
+    // the nav array and the rendered section order ever drift apart.
+    const sections = nav
+      .map((n) => document.querySelector(n.href))
+      .filter(Boolean)
+      .sort((a, b) => a.offsetTop - b.offsetTop)
+    const visible = new Set()
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(`#${entry.target.id}`)
-          }
+          if (entry.isIntersecting) visible.add(entry.target)
+          else visible.delete(entry.target)
         })
+        // Several sections can sit in the band at once — always highlight the
+        // topmost one on the page so the order tracks the scroll direction.
+        const topmost = sections.find((s) => visible.has(s))
+        if (topmost) setActive(`#${topmost.id}`)
       },
       { rootMargin: '-40% 0px -50% 0px', threshold: 0 }
     )
+
     sections.forEach((s) => observer.observe(s))
     return () => observer.disconnect()
   }, [])

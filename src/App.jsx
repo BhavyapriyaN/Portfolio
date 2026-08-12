@@ -17,8 +17,8 @@ export default function App() {
       <Hero />
       <About />
       <Experience />
-      <Skills />
       <Projects />
+      <Skills />
       <Certifications />
       <Education />
       <GitHubActivity />
