@@ -1,4 +1,4 @@
-# Bhavya Priya N — Portfolio
+# Bhavya Priya N - Portfolio
 
 A modern, single-page portfolio built with **React + Vite + Tailwind CSS**, deployable to **GitHub Pages**.
 
@@ -36,13 +36,13 @@ This includes your name, headline, intro, social links, resume path, experience,
 
 **Profile photo:** none is included since one wasn't provided. To add one, drop an image into `public/` (e.g. `public/photo.jpg`) and reference it from `Hero.jsx`.
 
-**GitHub repos:** the "Engineering Activity" section currently links to your GitHub profile only, since no specific repos were provided. To feature specific repos with descriptions, fill in the `githubRepos` array in `src/data/portfolio.js` — the section will automatically switch to showing repo cards once that array is non-empty.
+**GitHub repos:** the "Engineering Activity" section currently links to your GitHub profile only, since no specific repos were provided. To feature specific repos with descriptions, fill in the `githubRepos` array in `src/data/portfolio.js` - the section will automatically switch to showing repo cards once that array is non-empty.
 
 ---
 
 ## 3. Deploy to GitHub Pages
 
-### Step 1 — Set the base path
+### Step 1 - Set the base path
 
 Open `vite.config.js` and set `base` to match your repository name:
 
@@ -56,7 +56,7 @@ export default defineConfig({
 - If you're deploying to a **project repo** (e.g. `github.com/BhavyapriyaN/portfolio`), use `base: '/portfolio/'`.
 - If you're deploying to your **user/organization root site** (a repo literally named `BhavyapriyaN.github.io`), use `base: '/'`.
 
-### Step 2 — Push this project to a new GitHub repository
+### Step 2 - Push this project to a new GitHub repository
 
 ```bash
 git init
@@ -67,11 +67,11 @@ git remote add origin https://github.com/BhavyapriyaN/your-repo-name.git
 git push -u origin main
 ```
 
-### Step 3 — Enable GitHub Pages via GitHub Actions
+### Step 3 - Enable GitHub Pages via GitHub Actions
 
 1. On GitHub, go to your repo → **Settings → Pages**.
 2. Under **Build and deployment → Source**, select **GitHub Actions**.
-3. That's it — the included workflow at `.github/workflows/deploy.yml` will automatically build and deploy the site on every push to `main`.
+3. That's it - the included workflow at `.github/workflows/deploy.yml` will automatically build and deploy the site on every push to `main`.
 
 Your site will be live at:
 
@@ -81,7 +81,7 @@ https://BhavyapriyaN.github.io/your-repo-name/
 
 (or `https://BhavyapriyaN.github.io/` if you used the root user-site repo.)
 
-### Step 4 — Verify
+### Step 4 - Verify
 
 Check the **Actions** tab in your repo to watch the deploy run. Once it finishes, the Pages URL will also appear under **Settings → Pages**.
 
@@ -93,7 +93,7 @@ Check the **Actions** tab in your repo to watch the deploy run. Once it finishes
 2. At your domain registrar, add either:
    - A `CNAME` record pointing your subdomain (e.g. `www`) to `BhavyapriyaN.github.io`, or
    - `A` records for the apex domain pointing to GitHub's Pages IPs (GitHub's Pages docs list the current IPs).
-3. Once DNS propagates, GitHub will issue an HTTPS certificate automatically — check "Enforce HTTPS" in the same Pages settings once available.
+3. Once DNS propagates, GitHub will issue an HTTPS certificate automatically - check "Enforce HTTPS" in the same Pages settings once available.
 4. If you switch to a custom domain at the root (no path prefix), set `base: '/'` in `vite.config.js` and redeploy.
 
 ---

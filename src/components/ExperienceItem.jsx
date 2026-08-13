@@ -15,7 +15,7 @@ export default function ExperienceItem({ item, isLast }) {
       <ul className="m-0 p-0 list-none flex flex-col gap-2.5">
         {item.bullets.map((b, i) => (
           <li key={i} className="text-[14.5px] text-[#33363A] pl-4 relative">
-            <span className="absolute left-0 text-ink-soft">—</span>
+            <span className="absolute left-0 text-ink-soft">-</span>
             {b}
           </li>
         ))}

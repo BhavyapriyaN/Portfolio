@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────
-// Central content file. Update everything here — no need to
+// Central content file. Update everything here - no need to
 // touch component files to change your info later.
 // ─────────────────────────────────────────────────────────────
 
@@ -7,7 +7,7 @@ export const personal = {
   name: 'Bhavya Priya N',
   roleTags: ['Data Engineer', 'AWS', 'SQL', 'Python', 'Power BI'],
   intro:
-    'I build scalable ETL pipelines and cloud cost analytics on AWS — turning raw usage data into automated FinOps dashboards and cost-optimization systems that teams rely on daily.',
+    'I build scalable ETL pipelines and cloud cost analytics on AWS - turning raw usage data into automated FinOps dashboards and cost-optimization systems that teams rely on daily.',
   openToOpportunities: true,
   email: 'bhavyapriya127@gmail.com',
   linkedin: 'https://www.linkedin.com/in/bhavyapriya/',
@@ -26,7 +26,7 @@ export const heroStats = [
 
 export const about = {
   paragraphs: [
-    "I'm a Data Engineer at Datagrokr Analytics with nearly three years of experience building cloud data infrastructure on AWS. My work centers on FinOps — ETL pipelines with Redshift, Glue, and Lambda, and cost-optimization tooling backed by Power BI dashboards.",
+    "I'm a Data Engineer at Datagrokr Analytics with nearly three years of experience building cloud data infrastructure on AWS. My work centers on FinOps - ETL pipelines with Redshift, Glue, and Lambda, and cost-optimization tooling backed by Power BI dashboards.",
     "I hold AWS and Microsoft certifications in data engineering, and I'm looking to bring that same rigor to data platform teams.",
   ],
   facts: [
@@ -43,7 +43,7 @@ export const experience = [
     role: 'Data Engineer',
     company: 'Datagrokr Analytics Pvt. Ltd.',
     location: 'Bangalore, India',
-    dates: 'Oct 2023 — Present',
+    dates: 'Oct 2023 - Present',
     bullets: [
       'Designed and optimized scalable ETL pipelines on AWS Redshift, Glue, Athena, S3, Lambda, Step Functions, and DynamoDB.',
       'Reduced ELB processing time by over 70% (6–7 hours to under 2 hours) and cut EC2 processing to 10–15 minutes.',
@@ -58,7 +58,7 @@ export const experience = [
     role: 'Process Executive',
     company: 'Equiniti India',
     location: 'Chennai, India',
-    dates: 'Jul 2022 — Dec 2022',
+    dates: 'Jul 2022 - Dec 2022',
     bullets: [
       'Performed financial reconciliation and data validation using Excel, ensuring operational accuracy.',
     ],
@@ -94,7 +94,7 @@ export const skillGroups = [
   },
 ]
 
-// Selected engineering work, drawn directly from resume experience —
+// Selected engineering work, drawn directly from resume experience -
 // no separate project list was provided, so these are real production
 // initiatives rather than standalone repos.
 export const projects = [

@@ -22,7 +22,7 @@ function CertCard({ cert }) {
       href={cert.url}
       target="_blank"
       rel="noreferrer"
-      aria-label={`${cert.name} — view credential`}
+      aria-label={`${cert.name} - view credential`}
       className={`${base} no-underline text-ink hover:border-accent transition-colors`}
     >
       {body}
@@ -51,7 +51,7 @@ export default function Certifications() {
               <div>
                 <div>
                   <span className="font-semibold">{award.name}</span>
-                  <span className="text-ink-soft text-sm"> — {award.org}</span>
+                  <span className="text-ink-soft text-sm"> - {award.org}</span>
                 </div>
                 {award.detail && <div className="text-[13px] text-ink-soft mt-1">{award.detail}</div>}
               </div>

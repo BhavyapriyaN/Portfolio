@@ -20,7 +20,7 @@ export default function Navbar() {
           if (entry.isIntersecting) visible.add(entry.target)
           else visible.delete(entry.target)
         })
-        // Several sections can sit in the band at once — always highlight the
+        // Several sections can sit in the band at once - always highlight the
         // topmost one on the page so the order tracks the scroll direction.
         const topmost = sections.find((s) => visible.has(s))
         if (topmost) setActive(`#${topmost.id}`)
